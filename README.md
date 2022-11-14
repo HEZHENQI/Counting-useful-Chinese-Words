@@ -10,7 +10,7 @@ The useful chinese words here refer to nouns, adjectives, verbs and adverbs. The
 
 此文档应用于计算中文有效词组或字，通常运用在计算问卷调查回复的质量计算。
 
-我先运用百度的LAC模型（https://github.com/baidu/lac）进行分词，之后使用百度停止词库剔除停止词后计算文本中的名词，形容词，动词和副词的数量。
+我先运用百度的LAC模型(https://github.com/baidu/lac)进行分词，之后使用百度停止词库剔除停止词后计算文本中的名词，形容词，动词和副词的数量。
 
 
 ## Installation & Usage
