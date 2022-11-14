@@ -14,7 +14,7 @@ def count_useful_char(stop_words,text):
   return len(text)
   
 ### example:
-## python keep_countwords --stop_words_path=xxx --csv_path=xxx --save_path=xxx
+## python keep_countwords.py --stop_words_path=xxx --csv_path=xxx --save_path=xxx
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--stop_words_path",dest = "stop_words_path",required = True)
