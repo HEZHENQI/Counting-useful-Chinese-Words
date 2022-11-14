@@ -10,5 +10,8 @@ The useful chinese words here refer to nouns, adjectives, verbs and adverbs. The
 Details of Installation of lac is in https://github.com/baidu/lac
 
 Edit paths name in main.sh and simply run the command main.sh
+    -stop_words_path refer to where stop_words.txt is stored
+    -csv_path: path of the csv file which stored all texts and all texts texts are stored in the column named "text" in the csv file
+    -save_path: path of saving output csv file
 
-Remainder: All texts are stored in the column named "text" in a csv file
+
