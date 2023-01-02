@@ -31,10 +31,13 @@ def main():
     df = pd.read_csv(csv_path)
     text_lists = df["text"].to_list()
     for i,text in enumerate(text_lists):
+        text = text.replace(" ",",")
         lac_result = lac.run(text)
+        if i==519 or i==518 or i==520:
+          print(text,lac_result)
         num_useful_words = 0
         useful_words = ""
-    
+
         for n in range(len(lac_result[0])):
             if n in stop_words or lac_result[1][n] not in need_words_type:
                 continue
@@ -44,8 +47,7 @@ def main():
         df.loc[i,"num_useful_char"] = len(useful_words.replace(" ",""))
         df.loc[i,"num_useful_words"] = num_useful_words
         df.loc[i,"useful_words"] = useful_words
-  df.to_csv(save_path,index=False)
+    df.to_csv(save_path,index=False)
 
 if __name__ == "__main__":
     main()
-
